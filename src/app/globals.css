@@ -1,26 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500;1,700&display=swap');
 @import "tailwindcss";
 
+@theme {
+  --color-bg: #03142F;
+  --color-bg2: #061d45;
+  --color-fg: #F7F9FC;
+  --color-primary: #087BFF;
+  --color-cyan: #16D8E8;
+  --color-indigo: #4334F2;
+  --color-magenta: #C400FF;
+
+  --color-deep-navy: #061B42;
+  --color-dark-navy: #02294B;
+  --color-electric-blue: #087BFF;
+  --color-bright-cyan: #16D8E8;
+  --color-purple: #4334F2;
+  --color-dark-section: #03142F;
+  --color-brand-bg: #03142F;
+
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-outfit: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Core Cinematic Tokens */
+  --bg: #03142F;
+  --bg2: #061d45;
+  --fg: #F7F9FC;
+  --primary: #087BFF;
+  --cyan: #16D8E8;
+  --indigo: #4334F2;
+  --magenta: #C400FF;
+
+  /* Glassmorphism Specs */
+  --card-glass: rgba(255, 255, 255, 0.06);
+  --card-border: rgba(120, 170, 255, 0.28);
+  --card-glow: rgba(22, 216, 232, 0.22);
+  --inner-cyan-glow: inset 0 0 24px rgba(22, 216, 232, 0.12);
+
+  /* Gradients */
+  --grad-primary: linear-gradient(135deg, #087BFF 0%, #16D8E8 100%);
+  --grad-accent: linear-gradient(135deg, #4334F2 0%, #087BFF 50%, #16D8E8 100%);
+  --grad-magenta: linear-gradient(135deg, #4334F2 0%, #C400FF 100%);
+
+  /* Default Font */
+  --font-family: 'Outfit', sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Force dark navy background as default */
+html, body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+  min-height: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #020C1D;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(8, 123, 255, 0.4);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #16D8E8;
+}
+
+/* Subtle Film-Grain Overlay */
+.film-grain-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.045;
+  mix-blend-mode: overlay;
+}
+
+/* Scroll Progress Bar at the Top */
+.global-scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2.5px;
+  background: linear-gradient(90deg, #087BFF 0%, #16D8E8 50%, #C400FF 100%);
+  transform-origin: 0% 50%;
+  transform: scaleX(0);
+  z-index: 10001;
+  pointer-events: none;
+  box-shadow: 0 0 12px #16D8E8;
+}
+
+/* Hide default cursor on desktop when custom cursor is active */
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor: none;
+  }
+  a, button, input, textarea, select, [role="button"] {
+    cursor: none;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Glass Card Global Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(120, 170, 255, 0.28);
+  box-shadow: inset 0 0 24px rgba(22, 216, 232, 0.08), 0 12px 40px rgba(0, 0, 0, 0.4);
+  border-radius: 22px;
+  transition: border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.glass-panel:hover {
+  border-color: rgba(22, 216, 232, 0.55);
+  box-shadow: inset 0 0 28px rgba(22, 216, 232, 0.16), 0 16px 50px rgba(8, 123, 255, 0.25);
+}
+
+/* Pill Button */
+.btn-pill {
+  border-radius: 60px;
+  padding: 14px 28px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Typography Helpers */
+.font-accent-italic {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: -0.01em;
+}
+
+.gradient-text-brand {
+  background: linear-gradient(135deg, #087BFF 10%, #16D8E8 50%, #4334F2 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-cyan {
+  background: linear-gradient(135deg, #16D8E8 0%, #087BFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-magenta {
+  background: linear-gradient(135deg, #4334F2 0%, #C400FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle Technical Grid Background */
+.tech-grid-dark {
+  background-image: 
+    linear-gradient(rgba(120, 170, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(120, 170, 255, 0.035) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+/* Glowing Rail Pulse */
+@keyframes railGlowPulse {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(8, 123, 255, 0.4), 0 0 24px rgba(22, 216, 232, 0.2);
+    opacity: 0.8;
+  }
+  50% {
+    box-shadow: 0 0 22px rgba(8, 123, 255, 0.8), 0 0 40px rgba(22, 216, 232, 0.6);
+    opacity: 1;
+  }
+}
+
+.animate-rail-glow {
+  animation: railGlowPulse 4s ease-in-out infinite;
+}
+
+/* Card Sway Animation */
+@keyframes cardGentleSway {
+  0%, 100% {
+    transform: rotate(-1.5deg);
+  }
+  50% {
+    transform: rotate(1.8deg);
+  }
+}
+
+.swaying-card {
+  transform-origin: top center;
+  animation: cardGentleSway 5.5s ease-in-out infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.swaying-card:hover {
+  animation-play-state: paused;
+  transform: translateY(-8px) scale(1.02) !important;
+}
+
+/* Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .swaying-card {
+    animation: none !important;
+  }
 }
