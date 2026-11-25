@@ -5,10 +5,10 @@ import { Sparkles, ShieldCheck, Target, Zap, Users } from "lucide-react";
 import GlassCard from "src/components/ui/GlassCard";
 
 const PIPELINE_STAGES = [
-  { id: "01", stage: "INTENT SIGNAL", title: "Consumer Ingestion", desc: "Search, social, and contextual media traffic captures consumer inquiry at peak intent.", role: "Traffic Origin", icon: Sparkles, accent: "#087BFF" },
-  { id: "02", stage: "VERIFICATION", title: "Quality & Compliance", desc: "Every record is screened for contact integrity, duplicate prevention, and explicit consent.", role: "Validation Layer", icon: ShieldCheck, accent: "#16D8E8" },
-  { id: "03", stage: "MARKETPLACE", title: "Central Matching Hub", desc: "Automated routing rules match validated prospects to eligible buyer criteria in real time.", role: "Demand Engine", icon: Target, accent: "#4334F2" },
-  { id: "04", stage: "MATCHING & DELIVERY", title: "Direct Buyer Ingestion", desc: "Matched opportunities flow directly into target buyer CRMs, dialers, and webhook endpoints.", role: "Destination Ingestion", icon: Zap, accent: "#C400FF" },
+  { id: "01", stage: "INTENT", title: "Consumer Intent", desc: "Consumers actively explore services, request quotes, or submit inquiries across verified channels.", role: "Traffic Origin", icon: Sparkles, accent: "#087BFF" },
+  { id: "02", stage: "VALIDATION", title: "Lead Capture & Validation", desc: "Inquiries are captured and screened through structured validation checks to maintain quality standards.", role: "Verification Layer", icon: ShieldCheck, accent: "#16D8E8" },
+  { id: "03", stage: "MATCHING", title: "Intelligent Matching", desc: "Validated leads are matched with buyer requirements based on targeting parameters and availability.", role: "Demand Engine", icon: Target, accent: "#4334F2" },
+  { id: "04", stage: "DELIVERY", title: "Lead Delivery", desc: "Leads are delivered to buyers through automated workflows, API connections, or webhook integrations.", role: "Destination Ingestion", icon: Zap, accent: "#C400FF" },
 ];
 
 export default function HowItWorks() {
@@ -37,11 +37,14 @@ export default function HowItWorks() {
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-extrabold text-white tracking-tight leading-[1.08]">
-              The Infrastructure Connecting{" "}
+              A Smarter Way to Connect{" "}
               <span className="bg-gradient-to-r from-[#087BFF] via-[#16D8E8] to-[#C400FF] bg-clip-text text-transparent">
-                Supply &amp; Demand
+                Supply and Demand
               </span>
             </h2>
+            <p className="mt-3 text-sm sm:text-base text-[#94A3B8] font-light leading-relaxed">
+              From the moment a consumer expresses interest to the moment a business receives an opportunity, the marketplace helps coordinate the process.
+            </p>
           </div>
           <div className="flex items-center space-x-2 text-xs font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3.5 py-2 rounded-xl shrink-0 shadow-[0_0_15px_rgba(16,185,129,0.15)]">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />

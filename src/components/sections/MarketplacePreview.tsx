@@ -93,12 +93,12 @@ export default function MarketplacePreview() {
             <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-extrabold text-white tracking-tight leading-[1.05] mb-4">
               Real-Time <span className="font-accent-italic font-light text-[#16D8E8]">Demand.</span> <br />
               <span className="bg-gradient-to-r from-[#087BFF] via-[#16D8E8] to-[#C400FF] bg-clip-text text-transparent">
-                Ready to Convert.
+                Ready to Connect.
               </span>
             </h2>
 
             <p className="text-sm text-[#94A3B8] font-light leading-relaxed mb-6 max-w-[340px]">
-              Browse verified consumer intent signals matched to active buyer parameters in real time.
+              Explore incoming consumer inquiries across active verticals, qualification parameters, and automated delivery endpoints.
             </p>
 
             {/* Filter Pills */}

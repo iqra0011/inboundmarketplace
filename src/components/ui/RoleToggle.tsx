@@ -12,7 +12,7 @@ interface RoleOption {
 const ROLES: RoleOption[] = [
   { id: "buyer", label: "Lead Buyer" },
   { id: "publisher", label: "Traffic Publisher" },
-  { id: "partner", label: "Partner" },
+  { id: "partner", label: "Technology Partner" },
   { id: "other", label: "Other" },
 ];
 

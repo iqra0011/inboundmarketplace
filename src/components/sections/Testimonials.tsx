@@ -27,13 +27,13 @@ export default function Testimonials() {
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-extrabold text-white tracking-tight leading-[1.08] mb-3">
-            Trusted by Leaders <br />
+            Built for{" "}
             <span className="bg-gradient-to-r from-[#087BFF] via-[#16D8E8] to-[#C400FF] bg-clip-text text-transparent">
-              Across Industries.
+              Shared Marketplace Success.
             </span>
           </h2>
           <p className="text-sm sm:text-base text-[#94A3B8] font-light leading-relaxed">
-            Real feedback from acquisition teams and publisher networks operating on our live exchange.
+            How Inbound Marketplace creates value for lead buyers and traffic publishers across every transaction.
           </p>
         </div>
 

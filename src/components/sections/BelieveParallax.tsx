@@ -7,26 +7,26 @@ import { Check, Shield, Cpu, Sparkles, TrendingUp } from "lucide-react";
 
 const BELIEVE_ITEMS = [
   {
-    title: "What We're Building",
-    desc: "An intelligent high-speed infrastructure connecting validated search, social, and media publishers with qualified enterprise demand.",
+    title: "Unified Marketplace",
+    desc: "A single environment where demand and supply interact through structured processes rather than fragmented channels.",
     icon: Sparkles,
     speed: -45,
   },
   {
-    title: "Why It Matters",
-    desc: "Consumers receive faster solutions from qualified providers, while businesses acquire customers with zero wasted marketing spend.",
+    title: "Real-Time Matching Engine",
+    desc: "Technology designed to pair incoming inquiries with buyer requirements accurately and quickly.",
     icon: TrendingUp,
     speed: 35,
   },
   {
-    title: "Technology First",
-    desc: "Automated routing algorithms, live parameter verification, and direct CRM ingestion replacing manual spreadsheets.",
+    title: "Quality-First Verification",
+    desc: "Validation checkpoints applied to improve lead integrity and reduce wasted acquisition efforts.",
     icon: Cpu,
     speed: -30,
   },
   {
-    title: "The Future of Acquisition",
-    desc: "A decentralized, high-velocity exchange where every match is based on verified purchase intent and mutual economic value.",
+    title: "Built for Both Sides",
+    desc: "A balanced ecosystem that supports long-term value for lead buyers and traffic publishers alike.",
     icon: Shield,
     speed: 40,
   },
@@ -81,18 +81,18 @@ export default function BelieveParallax() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight mb-4">
-              What We Believe
+              The Infrastructure Behind Better Connections
             </h2>
 
             <p className="text-sm sm:text-base text-[#94A3B8] font-light leading-relaxed mb-8">
-              Customer acquisition should not be a black box of opaque broker margins and unverified contact submissions. When intent is genuine and matching is transparent, both sides win.
+              At Inbound Marketplace, we believe lead acquisition should be straightforward, measurable, and built on reliable technology. By replacing fragmented methods with structured matching and validation, we help both sides of the marketplace operate more effectively.
             </p>
 
             <div className="rounded-[20px] bg-white/[0.06] backdrop-blur-[20px] border border-[rgba(120,170,255,0.25)] p-5 space-y-3.5 shadow-[inset_0_0_20px_rgba(22,216,232,0.06)]">
               {[
-                "Real-time delivery over batch exports",
-                "Consent verification at source of inquiry",
-                "Transparent marketplace pricing without hidden fees",
+                "Targeted lead matching based on defined parameters",
+                "Automated delivery via API, webhook, or CRM",
+                "Continuous focus on lead quality and verification",
               ].map((item) => (
                 <div key={item} className="flex items-center space-x-3 text-xs sm:text-sm font-medium text-white">
                   <div className="w-4 h-4 rounded-full bg-[#16D8E8]/20 flex items-center justify-center shrink-0 text-[#16D8E8]">

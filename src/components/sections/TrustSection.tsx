@@ -27,14 +27,14 @@ export default function TrustSection() {
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-extrabold text-white tracking-tight leading-[1.08]">
-              Quality Isn&apos;t a Promise.{" "}
+              Quality-First{" "}
               <span className="bg-gradient-to-r from-[#16D8E8] via-[#087BFF] to-emerald-400 bg-clip-text text-transparent">
-                It&apos;s Built Into the Network.
+                Lead Processing
               </span>
             </h2>
           </div>
           <span className="text-xs font-semibold text-[#94A3B8] bg-white/[0.06] border border-white/10 px-3.5 py-2 rounded-xl shrink-0">
-            Automated Product Verification Flow
+            Structured validation checks improve lead quality, reduce duplicate submissions, and support reliable delivery.
           </span>
         </div>
 

@@ -100,18 +100,18 @@ export default function FinalCTA() {
 
         {/* Supporting Copy */}
         <p className="text-base sm:text-lg text-[#94A3B8] font-light leading-relaxed max-w-xl mx-auto mb-10">
-          Connect with qualified inbound opportunities through a transparent, high-speed lead marketplace built for buyers and publishers.
+          Whether you&apos;re looking to acquire qualified leads or monetize your traffic, Inbound Marketplace gives you a smarter way to connect.
         </p>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <MagneticButton href="#marketplace" variant="primary">
-            <span>Explore the Marketplace</span>
+          <MagneticButton href="/contact" variant="primary">
+            <span>Get Started</span>
             <ArrowRight className="w-4 h-4 ml-1.5" />
           </MagneticButton>
 
           <MagneticButton href="/contact" variant="secondary">
-            <span>Contact Our Team</span>
+            <span>Talk to Our Team</span>
           </MagneticButton>
         </div>
 

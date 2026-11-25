@@ -248,24 +248,24 @@ export default function NodeHubCanvas() {
           >
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/25 text-rose-400 text-xs font-bold uppercase tracking-wider mb-4 w-fit">
               <AlertTriangle className="w-3.5 h-3.5" />
-              <span>The Old Way: Fragmented Broker Feeds</span>
+              <span>The Old Way: Fragmented &amp; Difficult to Measure</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-4 tracking-tight">
-              Disjointed Feeds & <br />
-              <span className="text-rose-400">Opaque Pricing</span>
+              Fragmented &amp; <br />
+              <span className="text-rose-400">Difficult to Measure</span>
             </h2>
 
             <p className="text-sm sm:text-base text-[#94A3B8] font-light leading-relaxed mb-6 max-w-xl">
-              Buyers navigate dozens of disparate broker channels with uncertain contact data, while publishers struggle with slow payouts, low fill rates, and unpredictable yield.
+              Traditional lead generation often relies on multiple disconnected sources, uncertain lead quality, and limited campaign transparency.
             </p>
 
             <div className="space-y-3">
               {[
-                "Unvalidated duplicate inquiries and scraped lead lists",
-                "Opaque broker markups and unknown routing margins",
-                "Manual spreadsheet reconciliation and disputed billings",
-                "Delayed batch delivery after consumer intent has expired",
+                "Disconnected lead sources and inconsistent quality",
+                "Uncertain origin and verification standards",
+                "Limited visibility into campaign performance",
+                "Manual and delayed delivery methods",
               ].map((item) => (
                 <div key={item} className="flex items-center space-x-3 text-xs sm:text-sm text-[#94A3B8]">
                   <span className="w-1.5 h-1.5 rounded-full bg-rose-400 shrink-0" />
@@ -275,7 +275,7 @@ export default function NodeHubCanvas() {
             </div>
 
             <div className="mt-8 text-xs font-mono uppercase tracking-widest text-rose-400/80">
-              High friction • Zero transparency • Low conversion
+              Fragmented • Unpredictable • Manual
             </div>
           </div>
 
@@ -286,26 +286,26 @@ export default function NodeHubCanvas() {
           >
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#16D8E8]/10 border border-[#16D8E8]/30 text-[#16D8E8] text-xs font-bold uppercase tracking-wider mb-4 w-fit shadow-[0_0_15px_rgba(22,216,232,0.2)]">
               <span className="w-2 h-2 rounded-full bg-[#16D8E8] animate-pulse" />
-              <span>The Inbound Way: Unified Routing Network</span>
+              <span>The Inbound Way: Structured, Transparent &amp; Automated</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-4 tracking-tight">
-              One High-Speed <br />
+              Structured, Transparent <br />
               <span className="bg-gradient-to-r from-[#087BFF] via-[#16D8E8] to-[#C400FF] bg-clip-text text-transparent">
-                Intelligent Network
+                &amp; Automated
               </span>
             </h2>
 
             <p className="text-sm sm:text-base text-[#94A3B8] font-light leading-relaxed mb-6 max-w-xl">
-              A unified real-time infrastructure connecting verified publishers with targeted buyers through automated parameter matching and sub-second CRM delivery.
+              Inbound Marketplace brings buyers and publishers together through structured validation, intelligent matching, and automated delivery.
             </p>
 
             <div className="space-y-3">
               {[
-                "Multi-layer screening and duplicate suppression before matching",
-                "Transparent dynamic marketplace pricing without intermediary markups",
-                "Real-time CRM webhook delivery within milliseconds of submission",
-                "Unified compliance auditing with cryptographic opt-in proofs",
+                "Targeted matching based on defined buyer criteria",
+                "Validation checks designed to reduce invalid submissions",
+                "Clear reporting and marketplace visibility",
+                "Automated delivery through direct technical integrations",
               ].map((item) => (
                 <div key={item} className="flex items-center space-x-3 text-xs sm:text-sm text-white">
                   <div className="w-4 h-4 rounded-full bg-[#16D8E8]/20 flex items-center justify-center shrink-0 text-[#16D8E8]">
@@ -317,7 +317,7 @@ export default function NodeHubCanvas() {
             </div>
 
             <div className="mt-8 text-xs font-mono uppercase tracking-widest text-[#16D8E8]">
-              Zero broker friction • Sub-second delivery • 100% Verified
+              Targeted matching • Structured validation • Automated delivery
             </div>
           </div>
 

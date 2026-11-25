@@ -38,7 +38,7 @@ export default function Hero() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#087BFF]" />
               </span>
               <span className="text-[10.5px] font-bold uppercase tracking-[0.2em] text-[#16D8E8]">
-                THE INBOUND LEAD MARKETPLACE
+                THE FUTURE OF LEAD GENERATION
               </span>
             </div>
 
@@ -56,24 +56,24 @@ export default function Hero() {
               </span>
               <span className="block overflow-hidden">
                 <span className="hero-reveal-line block">
-                  <span className="font-accent-italic font-light text-[#C400FF]">real</span> REVENUE.
+                  <span className="font-accent-italic font-light text-[#C400FF]">real business</span> OPPORTUNITIES.
                 </span>
               </span>
             </h1>
 
             {/* Supporting Copy */}
-            <p className="text-[15px] sm:text-[17px] text-[#94A3B8] font-light max-w-[500px] leading-[1.65] mb-8">
-              Turn consumer intent into qualified opportunities through verification, intelligent matching, and real-time delivery.
+            <p className="text-[15px] sm:text-[17px] text-[#94A3B8] font-light max-w-[540px] leading-[1.65] mb-8">
+              Inbound Marketplace connects businesses seeking qualified customers with trusted traffic publishers who deliver genuine consumer demand. Discover better leads, reach the right audience, and turn verified intent into measurable business growth.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 w-full sm:w-auto mb-10">
-              <MagneticButton href="#marketplace" variant="primary">
+              <MagneticButton href="/#marketplace" variant="primary">
                 <span>Explore the Marketplace</span>
                 <ArrowRight className="w-4 h-4 ml-1.5" />
               </MagneticButton>
-              <MagneticButton href="#publishers" variant="secondary">
-                <span>For Publishers</span>
+              <MagneticButton href="/#ecosystem" variant="secondary">
+                <span>Become a Partner</span>
               </MagneticButton>
             </div>
 
@@ -81,17 +81,22 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2.5 text-xs font-semibold text-[#94A3B8] mb-10">
               <span className="flex items-center space-x-1.5 text-white">
                 <Check className="w-4 h-4 text-[#087BFF] stroke-[2.5]" />
-                <span>Consent Verification</span>
+                <span>Verified Lead Sources</span>
               </span>
               <span className="text-white/20 hidden sm:inline">•</span>
               <span className="flex items-center space-x-1.5 text-white">
                 <Check className="w-4 h-4 text-[#16D8E8] stroke-[2.5]" />
-                <span>Real-Time Routing</span>
+                <span>Real-Time Lead Matching</span>
               </span>
               <span className="text-white/20 hidden sm:inline">•</span>
               <span className="flex items-center space-x-1.5 text-white">
                 <Check className="w-4 h-4 text-[#C400FF] stroke-[2.5]" />
-                <span>Intelligent Matching</span>
+                <span>Transparent Marketplace</span>
+              </span>
+              <span className="text-white/20 hidden sm:inline">•</span>
+              <span className="flex items-center space-x-1.5 text-white">
+                <Check className="w-4 h-4 text-[#10B981] stroke-[2.5]" />
+                <span>Direct CRM Integration</span>
               </span>
             </div>
 
@@ -99,34 +104,34 @@ export default function Hero() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6 border-t border-white/10 w-full max-w-2xl">
               <div>
                 <div className="text-2xl sm:text-3xl font-extrabold text-white">
-                  <CountUp end={50000} suffix="+" />
+                  <CountUp end={100} suffix="%" />
                 </div>
                 <span className="text-[11px] font-bold text-[#94A3B8] uppercase tracking-wider block mt-0.5">
-                  Qualified Leads
+                  Structured Validation
                 </span>
               </div>
               <div>
                 <div className="text-2xl sm:text-3xl font-extrabold text-white">
-                  <CountUp end={500} suffix="+" />
+                  <CountUp end={24} suffix="/7" />
                 </div>
                 <span className="text-[11px] font-bold text-[#94A3B8] uppercase tracking-wider block mt-0.5">
-                  Active Partners
+                  Live Matching
                 </span>
               </div>
               <div>
                 <div className="text-2xl sm:text-3xl font-extrabold text-white">
-                  <CountUp end={30} suffix="+" />
+                  <CountUp end={8} suffix="+" />
                 </div>
                 <span className="text-[11px] font-bold text-[#94A3B8] uppercase tracking-wider block mt-0.5">
-                  Industries
+                  High-Intent Verticals
                 </span>
               </div>
               <div>
                 <div className="text-2xl sm:text-3xl font-extrabold text-[#16D8E8]">
-                  <CountUp end={98} suffix="%" />
+                  <CountUp end={100} suffix="%" />
                 </div>
                 <span className="text-[11px] font-bold text-[#94A3B8] uppercase tracking-wider block mt-0.5">
-                  Lead Quality
+                  Direct CRM Sync
                 </span>
               </div>
             </div>

@@ -35,13 +35,13 @@ export default function EcosystemSection() {
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-extrabold text-white tracking-tight leading-[1.08] mb-3">
-            One Marketplace.{" "}
+            One Marketplace. Two Sides.{" "}
             <span className="bg-gradient-to-r from-[#087BFF] via-[#16D8E8] to-[#C400FF] bg-clip-text text-transparent">
-              Two Sides.
+              Shared Growth.
             </span>
           </h2>
           <p className="text-sm sm:text-base text-[#94A3B8] font-light leading-relaxed">
-            Connecting verified consumer demand with targeted customer acquisition through unified real-time infrastructure.
+            We bring lead buyers and traffic publishers together through a technology-driven marketplace designed to make customer acquisition more efficient, transparent, and scalable.
           </p>
         </div>
 
@@ -61,10 +61,10 @@ export default function EcosystemSection() {
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-3">
-                Acquire Customers With Precision
+                For Lead Buyers
               </h3>
               <p className="text-sm text-[#94A3B8] font-light leading-relaxed mb-8">
-                Receive validated opportunities with verified intent. Scale campaigns with precision targeting parameters and millisecond webhook delivery.
+                Access relevant consumer inquiries based on your business requirements, target audience, location, and acquisition criteria.
               </p>
 
               {/* Console preview box */}
@@ -102,7 +102,7 @@ export default function EcosystemSection() {
             </div>
 
             <MagneticButton href="/contact" variant="primary" className="w-full">
-              <span>Start Buying Leads</span>
+              <span>Find Qualified Leads</span>
               <ArrowRight className="w-4 h-4 ml-1" />
             </MagneticButton>
           </GlassCard>
@@ -120,10 +120,10 @@ export default function EcosystemSection() {
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-3">
-                Monetize Traffic At Maximum Yield
+                For Traffic Publishers
               </h3>
               <p className="text-sm text-[#94A3B8] font-light leading-relaxed mb-8">
-                Route high-intent consumer traffic into verified buyer endpoints. Earn competitive bids with granular campaign tracking and weekly payouts.
+                Connect your traffic sources with businesses actively looking for customer demand and unlock new monetization opportunities.
               </p>
 
               {/* Monetization Console preview box */}
@@ -161,7 +161,7 @@ export default function EcosystemSection() {
             </div>
 
             <MagneticButton href="/contact" variant="secondary" className="w-full">
-              <span>Apply as a Publisher</span>
+              <span>Monetize Your Traffic</span>
               <ArrowRight className="w-4 h-4 ml-1" />
             </MagneticButton>
           </GlassCard>

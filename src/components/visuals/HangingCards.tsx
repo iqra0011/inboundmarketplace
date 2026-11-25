@@ -14,44 +14,44 @@ import {
 
 const INDUSTRIES_DATA = [
   {
+    name: "Financial Services",
+    desc: "Personal finance, lending, debt, and credit solutions.",
+    icon: BarChart3,
+  },
+  {
     name: "Insurance",
-    desc: "Auto, Home, Life, and Health high-intent consumer matches.",
+    desc: "Auto, life, health, commercial, and property coverage.",
     icon: ShieldCheck,
   },
   {
     name: "Home Services",
-    desc: "HVAC, Solar, Roofing, and remodeling local project requests.",
+    desc: "Home improvement, roofing, solar, HVAC, and maintenance.",
     icon: Wrench,
   },
   {
-    name: "Healthcare",
-    desc: "Medicare, private insurance, and specialized medical matches.",
-    icon: Heart,
-  },
-  {
-    name: "Financial Services",
-    desc: "Personal loans, debt relief, mortgage, and wealth guidance.",
-    icon: BarChart3,
-  },
-  {
-    name: "Legal",
-    desc: "Personal injury, mass torts, family law, and contract intakes.",
-    icon: Scale,
-  },
-  {
     name: "Education",
-    desc: "Career training, online degrees, and adult education matches.",
+    desc: "Career programs, online certifications, and degree programs.",
     icon: GraduationCap,
   },
   {
+    name: "Automotive",
+    desc: "Vehicle purchase, auto financing, and protection plans.",
+    icon: Compass,
+  },
+  {
+    name: "Healthcare",
+    desc: "Medical coverage options, wellness services, and health inquiries.",
+    icon: Heart,
+  },
+  {
     name: "Real Estate",
-    desc: "Active buyers, motivated sellers, and mortgage pre-approvals.",
+    desc: "Residential buying, selling, mortgage, and property inquiries.",
     icon: Building2,
   },
   {
-    name: "Travel",
-    desc: "Custom holiday packages, premium cruises, and corporate accounts.",
-    icon: Compass,
+    name: "Other Consumer Services",
+    desc: "Specialized service categories matching active market demand.",
+    icon: Scale,
   },
 ];
 

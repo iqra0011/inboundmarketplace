@@ -24,13 +24,13 @@ export default function IndustryGrid() {
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-extrabold text-white tracking-tight leading-[1.08] mb-3">
-            High-Intent Verticals <br />
+            Connecting Businesses Across{" "}
             <span className="bg-gradient-to-r from-[#087BFF] via-[#16D8E8] to-[#C400FF] bg-clip-text text-transparent">
-              Powered by Live Routing.
+              High-Intent Industries
             </span>
           </h2>
           <p className="text-sm sm:text-base text-[#94A3B8] font-light leading-relaxed">
-            Every vertical operates on custom qualification endpoints, fraud filters, and automated bid matching.
+            Available verticals and targeting criteria depend on marketplace inventory and campaign requirements.
           </p>
         </div>
 

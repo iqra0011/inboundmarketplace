@@ -28,14 +28,14 @@ export default function AnalyticsSection() {
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-extrabold text-white tracking-tight leading-[1.08]">
-              Every Lead Has a Story.{" "}
+              Structured{" "}
               <span className="bg-gradient-to-r from-[#087BFF] via-[#16D8E8] to-[#C400FF] bg-clip-text text-transparent">
-                Every Match Has a Number.
+                Performance Visibility
               </span>
             </h2>
           </div>
           <p className="text-xs sm:text-sm font-light text-[#94A3B8] max-w-sm text-left lg:text-right">
-            Real-time marketplace monitoring, demand ingestion velocities, and algorithmic bid valuation.
+            Monitor lead delivery, campaign activity, and marketplace performance through structured reporting.
           </p>
         </div>
 

@@ -39,7 +39,7 @@ export default function PrivacyPage() {
         <section className="py-16 md:py-24 bg-[#03142F]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="rounded-[26px] bg-white/[0.05] backdrop-blur-[24px] border border-[rgba(120,170,255,0.25)] p-8 sm:p-14 shadow-[inset_0_0_24px_rgba(22,216,232,0.06),0_20px_50px_rgba(0,0,0,0.5)] text-left space-y-10">
-              
+
               <div>
                 <h2 className="text-xl sm:text-2xl font-bold text-white mb-3">1. Overview and Scope</h2>
                 <p className="text-sm sm:text-base font-light text-[#94A3B8] leading-relaxed">

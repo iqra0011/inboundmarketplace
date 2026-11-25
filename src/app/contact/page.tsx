@@ -8,7 +8,7 @@ import PlaneSubmit from "src/components/ui/PlaneSubmit";
 export const metadata: Metadata = {
   title: "Contact Us | Inbound Marketplace",
   description:
-    "Whether you are scaling high-intent customer acquisition or monetizing certified search and media traffic, our marketplace team is ready to connect.",
+    "Whether you're looking to acquire qualified leads, monetize your traffic, or explore a technology partnership, our team is ready to connect.",
 };
 
 export default function ContactPage() {
@@ -39,14 +39,14 @@ export default function ContactPage() {
                 </div>
 
                 <h1 className="text-4xl sm:text-5xl lg:text-[62px] font-extrabold tracking-tight text-white leading-[1.04] mb-6">
-                  Let's Connect <br />
+                  Let&apos;s Turn Intent <br />
                   <span className="bg-gradient-to-r from-[#087BFF] via-[#16D8E8] to-[#C400FF] bg-clip-text text-transparent">
-                    Intent With Opportunity.
+                    Into Opportunity.
                   </span>
                 </h1>
 
                 <p className="text-sm sm:text-base text-[#94A3B8] font-light leading-relaxed mb-8 max-w-lg">
-                  Whether you are scaling high-intent customer acquisition or monetizing certified search and media traffic, our marketplace team is ready to connect.
+                  Whether you&apos;re looking to acquire qualified leads, monetize your traffic, or explore a technology partnership, our team is ready to understand your requirements. Let&apos;s build a better connection.
                 </p>
 
                 {/* Two Info Chips */}
@@ -57,10 +57,10 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <span className="text-[10px] font-mono font-bold text-[#16D8E8] uppercase tracking-wider block">
-                        Direct Integration
+                        DIRECT INTEGRATION
                       </span>
                       <span className="text-xs sm:text-sm font-semibold text-white">
-                        Real-Time API & Webhook Support
+                        API and Webhook Integration Support
                       </span>
                     </div>
                   </div>
@@ -71,10 +71,10 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <span className="text-[10px] font-mono font-bold text-[#087BFF] uppercase tracking-wider block">
-                        Partner Onboarding
+                        PARTNER ONBOARDING
                       </span>
                       <span className="text-xs sm:text-sm font-semibold text-white">
-                        Dedicated Marketplace Specialists
+                        Guidance for New Marketplace Partners
                       </span>
                     </div>
                   </div>

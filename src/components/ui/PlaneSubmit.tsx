@@ -12,6 +12,10 @@ export default function PlaneSubmit() {
     name: "",
     email: "",
     company: "",
+    website: "",
+    vertical: "Financial Services",
+    country: "",
+    goal: "Acquiring Qualified Leads",
     message: "",
   });
 
@@ -66,7 +70,16 @@ export default function PlaneSubmit() {
 
   const resetForm = () => {
     setIsSubmitted(false);
-    setFormData({ name: "", email: "", company: "", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      company: "",
+      website: "",
+      vertical: "Financial Services",
+      country: "",
+      goal: "Acquiring Qualified Leads",
+      message: "",
+    });
     if (formRef.current) {
       gsap.set(formRef.current, { opacity: 1, scale: 1 });
     }
@@ -179,23 +192,90 @@ export default function PlaneSubmit() {
           </div>
         </div>
 
-        {/* Floating Label: Company Name */}
-        <div className="relative group">
-          <input
-            id="contact-company"
-            type="text"
-            required
-            value={formData.company}
-            onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-            placeholder=" "
-            className="peer w-full px-4 pt-6 pb-2 rounded-xl bg-white/[0.04] border border-[rgba(120,170,255,0.25)] text-sm text-white placeholder-transparent focus:outline-none focus:border-[#16D8E8] focus:shadow-[0_0_15px_rgba(22,216,232,0.25)] transition-all font-light"
-          />
-          <label
-            htmlFor="contact-company"
-            className="absolute left-4 top-2 text-[10.5px] font-mono font-bold uppercase tracking-wider text-[#94A3B8] peer-placeholder-shown:top-4 peer-placeholder-shown:text-xs peer-placeholder-shown:font-normal peer-focus:top-2 peer-focus:text-[10.5px] peer-focus:text-[#16D8E8] transition-all pointer-events-none"
-          >
-            Company Name
-          </label>
+        {/* Company Name and Website URL Row */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          {/* Floating Label: Company Name */}
+          <div className="relative group">
+            <input
+              id="contact-company"
+              type="text"
+              required
+              value={formData.company}
+              onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+              placeholder=" "
+              className="peer w-full px-4 pt-6 pb-2 rounded-xl bg-white/[0.04] border border-[rgba(120,170,255,0.25)] text-sm text-white placeholder-transparent focus:outline-none focus:border-[#16D8E8] focus:shadow-[0_0_15px_rgba(22,216,232,0.25)] transition-all font-light"
+            />
+            <label
+              htmlFor="contact-company"
+              className="absolute left-4 top-2 text-[10.5px] font-mono font-bold uppercase tracking-wider text-[#94A3B8] peer-placeholder-shown:top-4 peer-placeholder-shown:text-xs peer-placeholder-shown:font-normal peer-focus:top-2 peer-focus:text-[10.5px] peer-focus:text-[#16D8E8] transition-all pointer-events-none"
+            >
+              Company Name
+            </label>
+          </div>
+
+          {/* Floating Label: Website URL */}
+          <div className="relative group">
+            <input
+              id="contact-website"
+              type="text"
+              value={formData.website}
+              onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+              placeholder=" "
+              className="peer w-full px-4 pt-6 pb-2 rounded-xl bg-white/[0.04] border border-[rgba(120,170,255,0.25)] text-sm text-white placeholder-transparent focus:outline-none focus:border-[#16D8E8] focus:shadow-[0_0_15px_rgba(22,216,232,0.25)] transition-all font-light"
+            />
+            <label
+              htmlFor="contact-website"
+              className="absolute left-4 top-2 text-[10.5px] font-mono font-bold uppercase tracking-wider text-[#94A3B8] peer-placeholder-shown:top-4 peer-placeholder-shown:text-xs peer-placeholder-shown:font-normal peer-focus:top-2 peer-focus:text-[10.5px] peer-focus:text-[#16D8E8] transition-all pointer-events-none"
+            >
+              Website URL (Optional)
+            </label>
+          </div>
+        </div>
+
+        {/* Industry / Business Vertical and Country Row */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          {/* Vertical Select */}
+          <div className="relative group">
+            <select
+              id="contact-vertical"
+              value={formData.vertical}
+              onChange={(e) => setFormData({ ...formData, vertical: e.target.value })}
+              className="w-full px-4 pt-6 pb-2 rounded-xl bg-[#061d45] border border-[rgba(120,170,255,0.25)] text-sm text-white focus:outline-none focus:border-[#16D8E8] focus:shadow-[0_0_15px_rgba(22,216,232,0.25)] transition-all font-light cursor-pointer"
+            >
+              <option value="Financial Services">Financial Services</option>
+              <option value="Insurance">Insurance</option>
+              <option value="Home Services">Home Services</option>
+              <option value="Education">Education</option>
+              <option value="Automotive">Automotive</option>
+              <option value="Healthcare">Healthcare</option>
+              <option value="Real Estate">Real Estate</option>
+              <option value="Other Consumer Services">Other Consumer Services</option>
+            </select>
+            <label
+              htmlFor="contact-vertical"
+              className="absolute left-4 top-2 text-[10.5px] font-mono font-bold uppercase tracking-wider text-[#16D8E8] pointer-events-none"
+            >
+              Industry / Vertical
+            </label>
+          </div>
+
+          {/* Floating Label: Country */}
+          <div className="relative group">
+            <input
+              id="contact-country"
+              type="text"
+              value={formData.country}
+              onChange={(e) => setFormData({ ...formData, country: e.target.value })}
+              placeholder=" "
+              className="peer w-full px-4 pt-6 pb-2 rounded-xl bg-white/[0.04] border border-[rgba(120,170,255,0.25)] text-sm text-white placeholder-transparent focus:outline-none focus:border-[#16D8E8] focus:shadow-[0_0_15px_rgba(22,216,232,0.25)] transition-all font-light"
+            />
+            <label
+              htmlFor="contact-country"
+              className="absolute left-4 top-2 text-[10.5px] font-mono font-bold uppercase tracking-wider text-[#94A3B8] peer-placeholder-shown:top-4 peer-placeholder-shown:text-xs peer-placeholder-shown:font-normal peer-focus:top-2 peer-focus:text-[10.5px] peer-focus:text-[#16D8E8] transition-all pointer-events-none"
+            >
+              Country
+            </label>
+          </div>
         </div>
 
         {/* Floating Label: Message */}
@@ -213,9 +293,18 @@ export default function PlaneSubmit() {
             htmlFor="contact-message"
             className="absolute left-4 top-2 text-[10.5px] font-mono font-bold uppercase tracking-wider text-[#94A3B8] peer-placeholder-shown:top-4 peer-placeholder-shown:text-xs peer-placeholder-shown:font-normal peer-focus:top-2 peer-focus:text-[10.5px] peer-focus:text-[#16D8E8] transition-all pointer-events-none"
           >
-            How Can We Help? (Target verticals, pacing, integration)
+            Tell us about your business, campaign requirements, or traffic sources
           </label>
         </div>
+
+        {/* Privacy Notice */}
+        <p className="text-[11px] text-[#94A3B8]/80 font-light leading-relaxed">
+          By submitting this form, you agree to be contacted regarding your inquiry and acknowledge our{" "}
+          <a href="/privacy" className="text-[#16D8E8] hover:underline">
+            Privacy Policy
+          </a>
+          .
+        </p>
 
         {/* Submit Pill Button */}
         <button

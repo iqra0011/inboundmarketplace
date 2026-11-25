@@ -59,7 +59,7 @@ export default function OrbitRings() {
       {/* ═══ 2. THREE-STAGE FLOW LIST ═══ */}
       <div className="flex-1 text-left w-full">
         <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/[0.06] border border-white/10 text-xs font-mono uppercase tracking-wider text-[#16D8E8] mb-6">
-          <span>THE NETWORK FORMULA</span>
+          <span>TWO SIDES. ONE INTELLIGENT NETWORK.</span>
         </div>
 
         <div className="space-y-4">
@@ -68,8 +68,8 @@ export default function OrbitRings() {
             <div className="flex items-center space-x-4">
               <span className="w-3.5 h-3.5 rounded-full bg-[#087BFF] shadow-[0_0_10px_#087BFF] shrink-0" />
               <div>
-                <h4 className="text-base font-bold text-white tracking-tight">Consumer Intent</h4>
-                <p className="text-xs text-[#94A3B8] font-light">Point-of-need inquiries with high verified purchase committed intent.</p>
+                <h4 className="text-base font-bold text-white tracking-tight">Consumer Demand</h4>
+                <p className="text-xs text-[#94A3B8] font-light">High-intent inquiries actively initiated across verified search and media channels.</p>
               </div>
             </div>
             <ArrowRight className="w-4 h-4 text-[#087BFF] shrink-0 ml-2" />
@@ -80,26 +80,37 @@ export default function OrbitRings() {
             <div className="flex items-center space-x-4">
               <span className="w-3.5 h-3.5 rounded-full bg-[#16D8E8] shadow-[0_0_10px_#16D8E8] shrink-0" />
               <div>
-                <h4 className="text-base font-bold text-white tracking-tight">Intelligent Marketplace</h4>
-                <p className="text-xs text-[#94A3B8] font-light">Autonomous routing, fraud screening, and sub-second buyer matching.</p>
+                <h4 className="text-base font-bold text-white tracking-tight">Publisher Network</h4>
+                <p className="text-xs text-[#94A3B8] font-light">Verified traffic sources providing high-intent inbound consumer inquiries.</p>
               </div>
             </div>
             <ArrowRight className="w-4 h-4 text-[#16D8E8] shrink-0 ml-2" />
           </div>
 
           {/* Stage 3 */}
+          <div className="p-4 rounded-[16px] bg-white/[0.04] border border-[rgba(120,170,255,0.2)] flex items-center justify-between group hover:border-[#4334F2] transition-all">
+            <div className="flex items-center space-x-4">
+              <span className="w-3.5 h-3.5 rounded-full bg-[#4334F2] shadow-[0_0_10px_#4334F2] shrink-0" />
+              <div>
+                <h4 className="text-base font-bold text-white tracking-tight">Marketplace Technology</h4>
+                <p className="text-xs text-[#94A3B8] font-light">Validation checks, intelligent matching logic, and automated delivery pipelines.</p>
+              </div>
+            </div>
+            <ArrowRight className="w-4 h-4 text-[#4334F2] shrink-0 ml-2" />
+          </div>
+
+          {/* Stage 4 */}
           <div className="p-4 rounded-[16px] bg-white/[0.04] border border-[rgba(120,170,255,0.2)] flex items-center justify-between group hover:border-[#C400FF] transition-all">
             <div className="flex items-center space-x-4">
               <span className="w-3.5 h-3.5 rounded-full bg-[#C400FF] shadow-[0_0_10px_#C400FF] shrink-0" />
               <div>
-                <h4 className="text-base font-bold text-white tracking-tight">Connected Revenue</h4>
-                <p className="text-xs text-[#94A3B8] font-light">Direct CRM synchronization and predictable, closed-deal unit economics.</p>
+                <h4 className="text-base font-bold text-white tracking-tight">Business Opportunities</h4>
+                <p className="text-xs text-[#94A3B8] font-light">Qualified leads delivered directly to lead buyers ready to convert.</p>
               </div>
             </div>
             <ArrowRight className="w-4 h-4 text-[#C400FF] shrink-0 ml-2" />
           </div>
         </div>
-
       </div>
 
     </div>

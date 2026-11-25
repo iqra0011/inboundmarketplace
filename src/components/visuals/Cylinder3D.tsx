@@ -8,39 +8,39 @@ import { ShieldCheck, Zap, Target, BarChart3, Compass, Database } from "lucide-r
 const CAPABILITIES = [
   {
     num: "01",
-    title: "Verified Lead Quality",
-    desc: "Receive validated opportunities from trusted sources, filtered for fraudulent submissions in real time.",
-    icon: ShieldCheck,
-  },
-  {
-    num: "02",
-    title: "Real-Time Delivery",
-    desc: "Connect with prospects while intent is highest, within milliseconds of inquiry completion.",
-    icon: Zap,
-  },
-  {
-    num: "03",
-    title: "Smart Matching",
-    desc: "Match every opportunity with the right buyer based on custom geographic, credit, and vertical filters.",
-    icon: Target,
-  },
-  {
-    num: "04",
-    title: "Transparent Performance",
-    desc: "Track delivery, conversion and ROI without hidden broker markups or opaque routing fees.",
-    icon: BarChart3,
-  },
-  {
-    num: "05",
-    title: "Campaign Control",
-    desc: "Manage your acquisition strategy, bids, caps, and schedules from a single unified cockpit.",
+    title: "Lead Discovery",
+    desc: "Explore available lead opportunities based on target verticals, geography, and campaign requirements.",
     icon: Compass,
   },
   {
-    num: "06",
-    title: "Performance Analytics",
-    desc: "Understand which campaigns drive closed deals and optimize acquisition velocities faster.",
+    num: "02",
+    title: "Intelligent Matching",
+    desc: "Match incoming consumer inquiries with buyer-defined targeting and qualification criteria.",
+    icon: Target,
+  },
+  {
+    num: "03",
+    title: "Lead Verification",
+    desc: "Apply validation checks to improve lead quality, reduce duplicate submissions, and support reliable delivery.",
+    icon: ShieldCheck,
+  },
+  {
+    num: "04",
+    title: "Real-Time Distribution",
+    desc: "Route qualified leads to suitable buyers through automated delivery workflows.",
+    icon: Zap,
+  },
+  {
+    num: "05",
+    title: "Flexible Integrations",
+    desc: "Connect existing systems through API and webhook integrations.",
     icon: Database,
+  },
+  {
+    num: "06",
+    title: "Performance Visibility",
+    desc: "Monitor lead delivery, campaign activity, and marketplace performance through structured reporting.",
+    icon: BarChart3,
   },
 ];
 
@@ -104,10 +104,13 @@ export default function Cylinder3D() {
           </span>
         </div>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
-          Six capabilities, <span className="bg-gradient-to-r from-[#087BFF] via-[#16D8E8] to-[#C400FF] bg-clip-text text-transparent">one platform</span>
+          Everything You Need to Connect{" "}
+          <span className="bg-gradient-to-r from-[#087BFF] via-[#16D8E8] to-[#C400FF] bg-clip-text text-transparent">
+            Intent with Opportunity
+          </span>
         </h2>
         <p className="mt-3 text-sm sm:text-base text-[#94A3B8] max-w-xl mx-auto font-light">
-          Six foundational architectural layers powering verified lead acquisition in real time.
+          A technology-driven marketplace built for structured lead discovery, intelligent matching, and automated delivery.
         </p>
         <div className="hidden md:flex items-center justify-center space-x-2 mt-4 text-xs tracking-widest uppercase text-[#16D8E8]/70">
           <span className="inline-block animate-bounce">↓</span>

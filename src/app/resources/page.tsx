@@ -11,64 +11,65 @@ import HangingArticles, { ArticleItem } from "src/components/visuals/HangingArti
 const RESOURCE_CATEGORIES = [
   "All",
   "Marketplace",
-  "Buyer",
-  "Publisher",
+  "Lead Buyers",
+  "Publishers",
   "Industry",
+  "Technology",
 ];
 
 const SAMPLE_RESOURCES: ArticleItem[] = [
   {
     id: "r-1",
     category: "Marketplace",
-    title: "The Mechanics of Real-Time Lead Matching: From Raw Intent to CRM Ingestion",
-    desc: "A technical overview of parameter filtering, verification checkpoints, and automated bid valuation in modern B2B lead exchanges.",
-    readTime: "6 min read",
-    tag: "Technical Architecture",
+    title: "How Lead Marketplaces Connect Buyers and Publishers",
+    desc: "An overview of how modern lead marketplaces coordinate traffic sources, validation steps, and buyer routing to make customer acquisition more efficient.",
+    readTime: "5 min read",
+    tag: "Marketplace Fundamentals",
     featured: true,
   },
   {
     id: "r-2",
-    category: "Buyer",
-    title: "Optimizing Customer Acquisition Cost (CAC) with Dynamic Bid Parameters",
-    desc: "How enterprise buyers utilize granular geographical and credit filters to reduce acquisition waste.",
-    readTime: "4 min read",
+    category: "Lead Buyers",
+    title: "Building a Better Lead Acquisition Strategy",
+    desc: "Key considerations for businesses seeking qualified inquiries, from setting targeting criteria to managing intake capacity and conversion tracking.",
+    readTime: "6 min read",
     tag: "Buyer Playbook",
     featured: false,
   },
   {
     id: "r-3",
-    category: "Publisher",
-    title: "Maximizing Traffic Monetization Across High-Payout Consumer Verticals",
-    desc: "Strategies for media publishers to route contextual search traffic to direct campaign endpoints.",
+    category: "Publishers",
+    title: "Turning Consumer Traffic Into Monetizable Opportunities",
+    desc: "How publishers and media teams can align digital audiences with active lead demand across high-intent industry categories.",
     readTime: "5 min read",
-    tag: "Publisher Guide",
+    tag: "Publisher Insights",
     featured: false,
   },
   {
     id: "r-4",
     category: "Industry",
-    title: "The Shift from Static Lists to Live Consumer Ingestion in 2026",
-    desc: "Why modern revenue teams are moving away from stale database lists in favor of real-time verified streams.",
+    title: "Understanding Lead Quality and Consumer Intent",
+    desc: "Why consumer intent matters in lead generation, and how structured validation helps differentiate qualified inquiries from general traffic.",
     readTime: "4 min read",
-    tag: "Market Trends",
+    tag: "Industry Analysis",
     featured: false,
   },
   {
     id: "r-5",
-    category: "Marketplace",
-    title: "Cryptographic Consent Validation: Building TCPA Audit Trails at Scale",
-    desc: "How sub-second tokenized opt-in recording prevents compliance disputes and guarantees visual audit readiness.",
+    category: "Technology",
+    title: "The Role of APIs and Webhooks in Lead Delivery",
+    desc: "A technical look at how automated delivery workflows and real-time endpoints help businesses receive inquiries without delays.",
     readTime: "5 min read",
-    tag: "Compliance Tech",
+    tag: "Technical Architecture",
     featured: false,
   },
   {
     id: "r-6",
-    category: "Buyer",
-    title: "Multi-Vertical Lead Routing: Aligning CRM Capacities With Live Pacing",
-    desc: "Techniques for managing lead flow volatility across insurance, legal, and residential solar buyer accounts.",
-    readTime: "7 min read",
-    tag: "Operations",
+    category: "Lead Buyers",
+    title: "Reducing Duplicate Leads Through Better Validation",
+    desc: "How structured checks and suppression rules can help reduce duplicate submissions and protect marketing budgets.",
+    readTime: "4 min read",
+    tag: "Quality & Compliance",
     featured: false,
   },
 ];
@@ -107,19 +108,19 @@ export default function ResourcesPage() {
               <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] border border-[rgba(120,170,255,0.3)] shadow-[0_0_15px_rgba(22,216,232,0.15)] mb-6">
                 <span className="w-2 h-2 rounded-full bg-[#16D8E8] animate-pulse" />
                 <span className="text-[10.5px] font-bold uppercase tracking-[0.2em] text-[#16D8E8]">
-                  INTEL & GUIDES
+                  KNOWLEDGE &amp; INSIGHTS
                 </span>
               </div>
 
               <h1 className="text-4xl sm:text-6xl lg:text-[72px] font-extrabold tracking-tight text-white leading-[1.02] mb-6">
-                Insights From <br />
+                Insights for a Smarter <br />
                 <span className="bg-gradient-to-r from-[#087BFF] via-[#16D8E8] to-[#C400FF] bg-clip-text text-transparent">
-                  The Intent Network.
+                  Lead Generation Strategy.
                 </span>
               </h1>
 
               <p className="text-base sm:text-xl text-[#94A3B8] font-light leading-relaxed max-w-2xl mb-4">
-                Practical guides, market architecture overviews, and optimization strategies for modern lead buyers and traffic publishers.
+                Explore practical guides, industry insights, and technology resources designed to help lead buyers and traffic publishers make better acquisition decisions. Learn about lead quality, campaign optimization, marketplace technology, and performance-driven growth.
               </p>
             </div>
           </div>
@@ -135,17 +136,17 @@ export default function ResourcesPage() {
                 <div>
                   <div className="flex items-center space-x-3 mb-5">
                     <span className="px-3.5 py-1 bg-[#16D8E8]/10 border border-[#16D8E8]/30 text-[#16D8E8] text-xs font-mono font-bold uppercase tracking-wider rounded-lg shadow-[0_0_12px_rgba(22,216,232,0.15)]">
-                      FEATURED ARCHITECTURE GUIDE
+                      FEATURED GUIDE
                     </span>
-                    <span className="text-xs text-[#94A3B8] font-mono">{featuredResource.readTime}</span>
+                    <span className="text-xs text-[#94A3B8] font-mono">8 min read</span>
                   </div>
 
                   <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4 leading-tight">
-                    {featuredResource.title}
+                    Understanding the Lead Marketplace: From Consumer Intent to Conversion
                   </h2>
 
                   <p className="text-sm sm:text-base text-[#94A3B8] font-light leading-relaxed mb-8 max-w-2xl">
-                    {featuredResource.desc}
+                    Discover how lead marketplaces connect consumer inquiries with businesses through traffic acquisition, validation, intelligent matching, and automated delivery.
                   </p>
                 </div>
 
@@ -212,14 +213,21 @@ export default function ResourcesPage() {
             {/* Articles Hanging from Glowing Rail on Dashed Strings */}
             <HangingArticles articles={filtered} />
 
-            {/* Research Desk Callout */}
-            <div className="mt-16 p-6 rounded-[20px] bg-white/[0.04] border border-[rgba(120,170,255,0.22)] text-center max-w-xl mx-auto">
-              <span className="text-xs font-mono font-bold text-[#16D8E8] uppercase tracking-wider block mb-1">
-                RESEARCH DESK ACTIVE
+            {/* Bottom Callout & CTA */}
+            <div className="mt-16 p-8 sm:p-10 rounded-[24px] bg-white/[0.04] border border-[rgba(120,170,255,0.22)] text-center max-w-2xl mx-auto">
+              <span className="text-xs font-mono font-bold text-[#16D8E8] uppercase tracking-wider block mb-2">
+                CONTINUOUS INDUSTRY INSIGHTS
               </span>
-              <p className="text-xs text-[#94A3B8] font-light">
-                New technical whitepapers and buyer vertical playbooks are published weekly.
+              <h3 className="text-2xl font-bold text-white mb-3">
+                Stay Ahead of the Marketplace.
+              </h3>
+              <p className="text-sm text-[#94A3B8] font-light mb-6">
+                Explore new insights, practical resources, and strategies for better lead acquisition.
               </p>
+              <MagneticButton href="/contact" variant="primary" className="!py-3 !px-8">
+                <span>Explore All Resources</span>
+                <ArrowRight className="w-4 h-4 ml-1" />
+              </MagneticButton>
             </div>
 
           </div>
