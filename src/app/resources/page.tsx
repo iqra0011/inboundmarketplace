@@ -7,6 +7,8 @@ import Navbar from "src/components/layout/Navbar";
 import Footer from "src/components/layout/Footer";
 import MagneticButton from "src/components/ui/MagneticButton";
 import HangingArticles, { ArticleItem } from "src/components/visuals/HangingArticles";
+import HeroScene from "src/components/visuals/HeroScene";
+import FloatingCardsScene from "src/components/visuals/hero-scenes/FloatingCardsScene";
 
 const RESOURCE_CATEGORIES = [
   "All",
@@ -92,42 +94,63 @@ export default function ResourcesPage() {
     <>
       <Navbar />
       <main className="flex-1 w-full bg-[#03142F] select-none text-[#F7F9FC]">
-        {/* ═══ 1. HERO SECTION ═══ */}
-        <section className="relative pt-36 pb-16 md:pt-48 md:pb-24 overflow-hidden border-b border-[rgba(120,170,255,0.18)]">
+        {/* ═══ 1. HERO SECTION (2-Column Grid with Animated 3D Floating Cards Scene) ═══ */}
+        <section className="relative pt-36 pb-16 md:pt-48 md:pb-24 overflow-hidden border-b border-[rgba(120,170,255,0.18)] tech-grid-dark">
           {/* Subtle radial glows */}
           <div
-            className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[500px] rounded-full blur-[160px] pointer-events-none -z-0 opacity-30"
+            className="absolute top-1/4 right-[5%] w-[650px] h-[650px] rounded-full blur-[160px] pointer-events-none -z-0 opacity-40"
             style={{
               background:
                 "radial-gradient(circle, rgba(8, 123, 255, 0.3) 0%, rgba(22, 216, 232, 0.15) 50%, transparent 80%)",
             }}
           />
 
-          <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left">
-            <div className="max-w-3xl">
-              <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] border border-[rgba(120,170,255,0.3)] shadow-[0_0_15px_rgba(22,216,232,0.15)] mb-6">
-                <span className="w-2 h-2 rounded-full bg-[#16D8E8] animate-pulse" />
-                <span className="text-[10.5px] font-bold uppercase tracking-[0.2em] text-[#16D8E8]">
-                  KNOWLEDGE &amp; INSIGHTS
-                </span>
+          <div className="max-w-[1380px] mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+              {/* Left Column: Heading, Eyebrow & Description */}
+              <div className="lg:col-span-7 flex flex-col items-start text-left">
+                <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] border border-[rgba(120,170,255,0.3)] shadow-[0_0_15px_rgba(22,216,232,0.15)] mb-6">
+                  <span className="w-2 h-2 rounded-full bg-[#16D8E8] animate-pulse" />
+                  <span className="text-[10.5px] font-bold uppercase tracking-[0.2em] text-[#16D8E8]">
+                    KNOWLEDGE &amp; INSIGHTS
+                  </span>
+                </div>
+
+                <h1 className="text-4xl sm:text-6xl lg:text-[72px] font-extrabold tracking-tight text-white leading-[1.02] mb-6">
+                  Insights for a Smarter <br />
+                  <span className="bg-gradient-to-r from-[#087BFF] via-[#16D8E8] to-[#C400FF] bg-clip-text text-transparent">
+                    Lead Generation Strategy.
+                  </span>
+                </h1>
+
+                <p className="text-base sm:text-xl text-[#94A3B8] font-light leading-relaxed max-w-2xl mb-8">
+                  Explore practical guides, industry insights, and technology resources designed to help lead buyers and traffic publishers make better acquisition decisions. Learn about lead quality, campaign optimization, marketplace technology, and performance-driven growth.
+                </p>
+
+                <div className="flex flex-wrap gap-4 items-center">
+                  <MagneticButton href="#featured" variant="primary" className="!py-3.5 !px-8">
+                    <span>Read Featured Guide</span>
+                    <ArrowRight className="w-4 h-4 ml-1" />
+                  </MagneticButton>
+
+                  <MagneticButton href="#articles" variant="outline" className="!py-3.5 !px-8">
+                    <span>Browse All Articles</span>
+                  </MagneticButton>
+                </div>
               </div>
 
-              <h1 className="text-4xl sm:text-6xl lg:text-[72px] font-extrabold tracking-tight text-white leading-[1.02] mb-6">
-                Insights for a Smarter <br />
-                <span className="bg-gradient-to-r from-[#087BFF] via-[#16D8E8] to-[#C400FF] bg-clip-text text-transparent">
-                  Lead Generation Strategy.
-                </span>
-              </h1>
-
-              <p className="text-base sm:text-xl text-[#94A3B8] font-light leading-relaxed max-w-2xl mb-4">
-                Explore practical guides, industry insights, and technology resources designed to help lead buyers and traffic publishers make better acquisition decisions. Learn about lead quality, campaign optimization, marketplace technology, and performance-driven growth.
-              </p>
+              {/* Right Column: Animated 3D Floating Knowledge Cards Scene */}
+              <div className="lg:col-span-5 flex items-center justify-center relative">
+                <HeroScene>
+                  <FloatingCardsScene />
+                </HeroScene>
+              </div>
             </div>
           </div>
         </section>
 
         {/* ═══ 2. FEATURED GUIDE: LARGE GLASS CARD WITH INDIGO-BLUE GRADIENT & SYNOPSIS PANEL ═══ */}
-        <section className="py-16 md:py-24 bg-[#03142F] border-b border-[rgba(120,170,255,0.18)]">
+        <section id="featured" className="py-16 md:py-24 bg-[#03142F] border-b border-[rgba(120,170,255,0.18)]">
           <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="rounded-[26px] bg-gradient-to-br from-[#061d45]/90 via-[#03142F]/95 to-[#4334F2]/25 backdrop-blur-[24px] border border-[rgba(120,170,255,0.32)] p-8 sm:p-12 shadow-[inset_0_0_30px_rgba(22,216,232,0.1),0_20px_50px_rgba(0,0,0,0.6)] text-left grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
               
@@ -187,7 +210,7 @@ export default function ResourcesPage() {
         </section>
 
         {/* ═══ 3. DIRECTORY WITH CATEGORY CHIPS (POP ANIMATION) & HANGING ARTICLES ═══ */}
-        <section className="py-20 md:py-28 bg-[#03142F]">
+        <section id="articles" className="py-20 md:py-28 bg-[#03142F]">
           <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
             
             {/* Category Filter Chips with Pop Animation */}
